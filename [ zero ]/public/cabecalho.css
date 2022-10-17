@@ -1,0 +1,155 @@
+
+/* Config da barra do cabeçalho */
+#cabecalho {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 2px solid rgb(0, 0, 0);
+    /*
+    border: 5px solid transparent;
+    border-image: linear-gradient(to left, red, blue);
+    border-image-slice: 1;
+    */
+    height: 100%;
+    display: flex;
+}
+
+/* Config da barra de logo do cabeçalho */
+.nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    height: 100%;
+    width: 10%;
+
+    font-size:2em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* Config da barra de links do cabeçalho */
+.links{
+    height: 100%;
+    width: 40%;
+
+}
+
+.lista {
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+/* Config dos itens do cabeçalho */
+.item {
+    height: 100%;
+    padding: 0 0 16px 0;
+    margin: 25px 25px 0 25px;
+    font-size:1.6em;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* Config da ceta ao lado do link*/
+.item span {
+    position: absolute;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    padding: 3px;
+    margin: 10px 5px;
+    transform: rotate(45deg);
+    transition: 0.3s;
+}
+
+/* Config da caixa com os sub itens*/
+.item div {
+    position: absolute;
+    height: 0px;
+    width: 100px;
+    background-color: rgb(250, 250, 235);
+    margin: 10px 30px ;
+    transition: 0.3s;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+/* Config das ações dos item do cabeçalho */
+.iacao:hover span {
+    
+    transform: rotate(225deg);
+}
+.itemacao:hover div{
+    border: 1px solid;
+    
+    height: auto;
+    width: 100px;
+}
+
+/* Config dos sub itens do cabeçalho */
+.subitem {
+    border: 1px solid;
+    border-radius: 3px;
+    margin: 4px;
+    font-size:0.6em;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+/* Config das ações dos sub itens do cabeçalho */
+.subitemacao:hover {
+    cursor: pointer;
+    font-size:0.65em;
+    margin: 2px;
+    box-shadow: 3px 3px 5px black;
+}
+
+/* Config de usuario do cabeçalho */
+.usuario {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Config do perfil do usuario do cabeçalho */
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 12%;
+}
+
+/* Config da imagem do perfil do usuario do cabeçalho */
+.perfil div {
+    border-radius: 50%;
+    border: 1px solid;
+    height: 80%;
+    width: 80%;
+    transition: 0.5s;
+}
+
+/* açãop de perfil do usuario do cabeçalho */
+.perfil div:hover{
+    height: 88%;
+    width: 88%;
+
+}
+
+/* Config do nome do perfil do usuario do cabeçalho */
+.perfilnome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2em;
+    margin-right: 15px;
+    margin-left: 15px;
+}
